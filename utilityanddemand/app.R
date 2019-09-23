@@ -65,11 +65,11 @@ server <- function(input, output) {
         xd <- a*input$W/pxgrid
         lines(xd,pxgrid,col=rgb(1, 0, 0,.5))
         
-        plot(range(x),c(pxmin,pxmax),type="n",xaxs="i",yaxs="i",xlab="xylophones",ylab="price xylophones",main="Demand for xylophones",xlim=c(0,100),ylim=c(0,pymax))
-        points(a*input$W/input$px,input$px,pch = 19,col= rgb(1, 0, 0, 0.5))
-        pxgrid <- seq(pxmin,pxmax,length=101)
-        xd <- a*input$W/pxgrid
-        lines(xd,pxgrid,col=rgb(1, 0, 0,.5))
+        plot(range(y),c(pymin,pymax),type="n",xaxs="i",yaxs="i",xlab="yaks",ylab="price yaks",main="Demand for yaks",xlim=c(0,100),ylim=c(0,pymax))
+        points((1-a)*input$W/input$py,input$py,pch = 19,col= rgb(1, 0, 0, 0.5))
+        pygrid <- seq(pymin,pymax,length=101)
+        yd <- (1-a)*input$W/pygrid
+        lines(yd,pygrid,col=rgb(1, 0, 0,.5))
         
     })
 }
