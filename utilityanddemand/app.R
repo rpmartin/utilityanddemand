@@ -11,7 +11,7 @@ amax <- .99
 
 ui <- fluidPage(
     # Application title
-    titlePanel("utility maximization and demand function"),
+    titlePanel("Utility maximization and demand function"),
 
    sidebarLayout(
         sidebarPanel(
